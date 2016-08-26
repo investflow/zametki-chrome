@@ -8,7 +8,7 @@ function openTab(title, text, url) {
     chrome.tabs.getSelected(null, function (tab) {
         chrome.tabs.create({
             "index": tab.index + 1,
-            "url": "http://localhost:8080/zametki/new?title=" + title + "&text=" + text + "&url=" + url,
+            "url": "http://investflow.ru/zametki/new?title=" + title + "&text=" + text + "&url=" + url,
             "selected": true
         });
     });
